@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer utilities {
+  body {
+    font-family: "Work Sans", sans-serif;
+    scroll-behavior: smooth;
+  }
+  .grayscale-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  .grayscale-img:hover {
+    filter: grayscale(0%);
+  }
+  .project-card:hover .project-image {
+    transform: scale(1.02);
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #141414;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
+
+@theme {
+  --color-primary: #141414;
+  --color-background-light: #ffffff;
+  --font-display: "Work Sans", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
