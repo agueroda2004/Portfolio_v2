@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router";
 import { Router } from "./routes/Router.tsx";
+import "./i18n.js";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

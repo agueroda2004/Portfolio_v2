@@ -1,0 +1,25 @@
+{
+  "_comment": "HEADER",
+  "About": "Sobre Mí",
+  "Projects": "Proyectos",
+  "Stack": "Tecnologías",
+  "Contact": "Contacto",
+  "Download CV": "Descargar CV",
+
+  "_comment": "HERO",
+  "Available for Hire": "Disponible para Contratar",
+  "CRAFTING": "CREANDO",
+  "EXPERIENCES": "EXPERIENCIAS",
+  "DIGITAL": "DIGITALES",
+  "Full-stack Developer & UI/UX Designer focusing on clean code, functional aesthetics, and intuitive human interfaces.": "Desarrollador Full-stack y Diseñador UI/UX enfocado en código limpio, estética funcional e interfaces intuitivas.",
+  "View My Work": "Ver Mi Trabajo",
+
+  "_comment": "HERO",
+  "Experience": "Experiencia",
+  "Years": "Años",
+  "About Me": "Sobre Mí",
+  "Bridging the gap between complex logic and minimalist design.": "Acortando la brecha entre la lógica compleja y el diseño minimalista.",
+  "I build digital products with a focus on minimalism and functional design. My approach is rooted in the Swiss Design movement—prioritizing clarity, order, and objectivity in every pixel I craft.": "Construyo productos digitales con un enfoque en el minimalismo y el diseño funcional. Mi enfoque está inspirado en el movimiento del Diseño Suizo—priorizando la claridad, el orden y la objetividad en cada píxel que diseño.",
+  "With a background in Engineering, I bring a unique perspective to product development. I don't just build components; I design systems that scale and experiences that resonate with users": "Con formación en Ingeniería, aporto una perspectiva única al desarrollo de productos. No solo construyo componentes; diseño sistemas escalables y experiencias que conectan con los usuarios.",
+  "Projects Delivered": "Proyectos entregados"
+}
