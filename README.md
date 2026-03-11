@@ -1,4 +1,4 @@
-# Hi!, this is my portofolio. 👋
+# Hi!, this is my portfolio. 👋
 
 ### Technologies I used
 
