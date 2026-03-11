@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <AboutMe />
-      <TopProjects />
-      <Stack />
-      <Contact />
+      <div className="z-10 top-0 sticky">
+        <AboutMe />
+        <TopProjects />
+        <Stack />
+        <Contact />
+      </div>
     </div>
   );
 }

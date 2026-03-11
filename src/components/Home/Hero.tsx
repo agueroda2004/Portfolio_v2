@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export default function Hero() {
   const { t, i18n } = useTranslation();
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 border-b border-primary/5 border">
+    <section className="h-screen flex flex-col items-center justify-center px-6 border-b border-primary/5 border top-0 sticky z-1">
       <div className="max-w-5xl w-full">
         <p className="text-xs font-bold uppercase tracking-[0.3em] mb-8 text-primary/40">
           • {t("Available for Hire")}

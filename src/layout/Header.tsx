@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink, useLocation } from "react-router";
 
 export default function Header() {
   const [isMenuLanguageOpen, setIsMenuLanguageOpen] = useState<boolean>(false);
@@ -7,6 +8,7 @@ export default function Header() {
     localStorage.getItem("i18nextLng") || "en",
   );
   const menuRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -39,43 +41,56 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md px-6 md:px-10 lg:px-40 py-4 flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <div className="size-8 bg-primary flex items-center justify-center rounded">
+        <NavLink
+          className="size-8 bg-primary flex items-center justify-center rounded cursor-pointer"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          to={""}
+        >
           <span className="text-white font-black text-xl">D</span>
-        </div>
+        </NavLink>
         <h2 className="text-primary text-lg font-black tracking-tighter uppercase">
           Designer/Dev
         </h2>
       </div>
-      <nav className="hidden md:flex items-center gap-10">
-        <a
-          className="nav-link text-sm font-medium uppercase tracking-widest"
-          href="#about"
-        >
-          {t("About")}
-        </a>
-        <a
-          className="nav-link text-sm font-medium uppercase tracking-widest"
-          href="#projects"
-        >
-          {t("Projects")}
-        </a>
-        <a
-          className="nav-link text-sm font-medium uppercase tracking-widest"
-          href="#stack"
-        >
-          {t("Stack")}
-        </a>
-        <a
-          className="nav-link text-sm font-medium uppercase tracking-widest"
-          href="#contact"
-        >
-          {t("Contact")}
-        </a>
-      </nav>
+      {location.pathname === "/" && (
+        <nav className="hidden md:flex items-center gap-10">
+          <a
+            className="nav-link text-sm font-medium uppercase tracking-widest"
+            href="#about"
+          >
+            {t("About")}
+          </a>
+          <a
+            className="nav-link text-sm font-medium uppercase tracking-widest"
+            href="#projects"
+          >
+            {t("Projects")}
+          </a>
+          <a
+            className="nav-link text-sm font-medium uppercase tracking-widest"
+            href="#stack"
+          >
+            {t("Stack")}
+          </a>
+          <a
+            className="nav-link text-sm font-medium uppercase tracking-widest"
+            href="#contact"
+          >
+            {t("Contact")}
+          </a>
+        </nav>
+      )}
+
       <div className="flex items-center gap-4">
-        <button className="hidden sm:flex min-w-30 items-center justify-center bg-primary text-white text-xs font-bold uppercase tracking-widest h-10 px-6 hover:bg-primary/90 transition-all cursor-pointer active:scale-95 ">
+        <a
+          className="hidden sm:flex min-w-30 items-center justify-center bg-primary text-white text-xs font-bold uppercase tracking-widest h-10 px-6 hover:bg-primary/90 transition-all cursor-pointer active:scale-95 "
+          href="/Daniel_aguero_cv.pdf"
+          download="Daniel_aguero_cv.pdf"
+        >
           {t("Download CV")}
-        </button>
+        </a>
         <div className="flex items-center gap-2 border border-primary/10 px-2 h-10">
           <div className="relative " ref={menuRef}>
             <div
