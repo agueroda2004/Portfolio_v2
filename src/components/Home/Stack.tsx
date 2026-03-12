@@ -1,4 +1,3 @@
-import React from "react";
 import React_Logo from "../../assets/react_svg.svg";
 import Tailwind_Logo from "../../assets/tailwind_svg.svg";
 import TS_Logo from "../../assets/typescript_svg.svg";
