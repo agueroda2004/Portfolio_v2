@@ -19,6 +19,32 @@ type Project = {
   technologies: string[];
 };
 
+const technologyDescriptionKeyByName: Record<string, string> = {
+  react: "techDescription.React",
+  tailwind: "techDescription.Tailwind",
+  supabase: "techDescription.Supabase",
+  typescript: "techDescription.TypeScript",
+  "vs code": "techDescription.VS Code",
+  git: "techDescription.Git",
+  javascript: "techDescription.JavaScript",
+  neon: "techDescription.Neon",
+  vercel: "techDescription.Vercel",
+  angular: "techDescription.Angular",
+  node: "techDescription.Node",
+  express: "techDescription.Express",
+  postman: "techDescription.PostMan",
+  mysql: "techDescription.MySql",
+  firebase: "techDescription.FireBase",
+  mongo: "techDescription.Mongo",
+};
+
+const getTechnologyDescriptionKey = (technology: string) => {
+  return (
+    technologyDescriptionKeyByName[technology.toLowerCase()] ??
+    "techDescription.default"
+  );
+};
+
 const searchProjectById = (id: string | undefined) => {
   return projectsData.find((project) => project.id === Number(id));
 };
@@ -179,7 +205,9 @@ export default function ProjectDetail() {
           {project.technologies.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-8 border border-primary/10 rounded-xl hover:border-primary hover:scale-105 transition-all group gap-6 cursor-auto"
+              className="relative flex flex-col items-center justify-center p-8 border border-primary/10 rounded-xl hover:border-primary hover:scale-105 transition-all group/tech gap-6 cursor-default"
+              tabIndex={0}
+              aria-label={`${item}: ${t(getTechnologyDescriptionKey(item))}`}
             >
               <img
                 key={item}
@@ -191,6 +219,9 @@ export default function ProjectDetail() {
               <span className="text-xs font-bold uppercase tracking-widest">
                 {item}
               </span>
+              <div className="pointer-events-none absolute left-1/2 top-4 z-20 w-52 -translate-x-1/2 -translate-y-full rounded-lg bg-primary px-3 py-2 text-center text-[11px] font-medium normal-case leading-relaxed text-white opacity-0 shadow-lg transition-all duration-200 group-hover/tech:opacity-100 group-hover/tech:-translate-y-[calc(100%+6px)] group-focus-visible/tech:opacity-100 group-focus-visible/tech:-translate-y-[calc(100%+6px)]">
+                {t(getTechnologyDescriptionKey(item))}
+              </div>
             </div>
           ))}
         </div>

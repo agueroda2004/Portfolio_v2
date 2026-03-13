@@ -147,5 +147,24 @@
   "Custom Software Architect": "Arquitecto de Software a Medida",
   "Infrastructure Design": "Diseño de Infraestructura",
   "Client Requirement Management": "Gestión de Requisitos del Cliente",
-  "Quality Assurance Leadership": "Liderazgo de Aseguramiento de Calidad"
+  "Quality Assurance Leadership": "Liderazgo de Aseguramiento de Calidad",
+
+  "_comment": "PROJECT DETAIL - TECH TOOLTIPS",
+  "techDescription.React": "Librería de UI para construir interfaces rápidas y basadas en componentes.",
+  "techDescription.Tailwind": "Framework CSS utility-first para estilos rápidos y consistentes.",
+  "techDescription.Supabase": "Plataforma backend para base de datos, autenticación y tiempo real.",
+  "techDescription.TypeScript": "JavaScript tipado que mejora mantenibilidad y seguridad.",
+  "techDescription.VS Code": "Editor de código utilizado para desarrollo y depuración.",
+  "techDescription.Git": "Sistema de control de versiones para seguimiento y colaboración.",
+  "techDescription.JavaScript": "Lenguaje base para el comportamiento interactivo en aplicaciones web.",
+  "techDescription.Neon": "Postgres serverless usado para almacenamiento SQL escalable.",
+  "techDescription.Vercel": "Plataforma de hosting y despliegue optimizada para frontend.",
+  "techDescription.Angular": "Framework para construir aplicaciones web estructuradas y escalables.",
+  "techDescription.Node": "Runtime de JavaScript para servicios backend y APIs.",
+  "techDescription.Express": "Framework minimalista para construir APIs con Node.js.",
+  "techDescription.PostMan": "Herramienta de pruebas y documentación de APIs durante el desarrollo.",
+  "techDescription.MySql": "Base de datos relacional SQL para gestionar datos estructurados.",
+  "techDescription.FireBase": "Plataforma cloud con autenticación, base de datos y servicios para apps.",
+  "techDescription.Mongo": "Base de datos NoSQL orientada a documentos flexibles tipo JSON.",
+  "techDescription.default": "Tecnología utilizada dentro del stack de este proyecto."
 }

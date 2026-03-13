@@ -145,5 +145,24 @@
   "Custom Software Architect": "Custom Software Architect",
   "Infrastructure Design": "Infrastructure Design",
   "Client Requirement Management": "Client Requirement Management",
-  "Quality Assurance Leadership": "Quality Assurance Leadership"
+  "Quality Assurance Leadership": "Quality Assurance Leadership",
+
+  "_comment": "PROJECT DETAIL - TECH TOOLTIPS",
+  "techDescription.React": "UI library for building fast, component-based interfaces.",
+  "techDescription.Tailwind": "Utility-first CSS framework used for rapid, consistent styling.",
+  "techDescription.Supabase": "Backend platform for database, auth, and realtime features.",
+  "techDescription.TypeScript": "Typed JavaScript that improves maintainability and safety.",
+  "techDescription.VS Code": "Code editor used for development and debugging.",
+  "techDescription.Git": "Version control system used to track and collaborate on code.",
+  "techDescription.JavaScript": "Core language for interactive behavior in web apps.",
+  "techDescription.Neon": "Serverless Postgres used for scalable SQL data storage.",
+  "techDescription.Vercel": "Hosting and deployment platform optimized for frontend apps.",
+  "techDescription.Angular": "Framework for building structured, scalable web applications.",
+  "techDescription.Node": "JavaScript runtime for backend services and APIs.",
+  "techDescription.Express": "Minimal web framework for building APIs with Node.js.",
+  "techDescription.PostMan": "API testing and documentation tool used during development.",
+  "techDescription.MySql": "Relational SQL database for structured data management.",
+  "techDescription.FireBase": "Cloud platform offering auth, database, and app services.",
+  "techDescription.Mongo": "NoSQL database designed for flexible JSON-like documents.",
+  "techDescription.default": "Technology used in this project stack."
 }

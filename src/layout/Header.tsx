@@ -40,20 +40,20 @@ export default function Header() {
   }, []);
   return (
     <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md px-6 md:px-10 lg:px-40 py-4 flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <NavLink
-          className="size-8 bg-primary flex items-center justify-center rounded cursor-pointer"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          to={""}
-        >
+      <NavLink
+        className="flex items-center gap-3"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        to={""}
+      >
+        <div className="size-8 bg-primary flex items-center justify-center rounded cursor-pointer">
           <span className="text-white font-black text-xl">D</span>
-        </NavLink>
+        </div>
         <h2 className="text-primary text-lg font-black tracking-tighter uppercase">
           Designer/Dev
         </h2>
-      </div>
+      </NavLink>
       {location.pathname === "/" && (
         <nav className="hidden md:flex items-center gap-10">
           <a
