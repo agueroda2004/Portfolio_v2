@@ -8,7 +8,7 @@ export default function AboutMe() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-5">
           <div className="relative aspect-4/5 bg-gray-100 overflow-hidden border border-primary/10">
-            <LoadingImage src="https://ik.imagekit.io/5zi86k8wt/Daniel.JPG?updatedAt=1771634977021" />
+            <LoadingImage src="https://ik.imagekit.io/5zi86k8wt/Daniel%20Portafolio.jpeg" />
             <div className="absolute bottom-6 left-6 bg-white p-4 border border-primary/10">
               <p className="text-xs font-bold uppercase tracking-widest">
                 {t("Experience")}: 3+ {t("Years")}

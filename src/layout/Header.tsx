@@ -86,8 +86,8 @@ export default function Header() {
       <div className="flex items-center gap-4">
         <a
           className="hidden sm:flex min-w-30 items-center justify-center bg-primary text-white text-xs font-bold uppercase tracking-widest h-10 px-6 hover:bg-primary/90 transition-all cursor-pointer active:scale-95 "
-          href="/Daniel_aguero_cv.pdf"
-          download="Daniel_aguero_cv.pdf"
+          href="/Daniel Aguero CV.pdf"
+          download="Daniel Aguero CV.pdf"
         >
           {t("Download CV")}
         </a>
